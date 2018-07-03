@@ -1,0 +1,190 @@
+Only in /home/chetan/Final_DNN/genann: diff.txt
+Common subdirectories: /home/chetan/Final_DNN/12/genann/doc and /home/chetan/Final_DNN/genann/doc
+Common subdirectories: /home/chetan/Final_DNN/12/genann/example and /home/chetan/Final_DNN/genann/example
+Binary files /home/chetan/Final_DNN/12/genann/example1 and /home/chetan/Final_DNN/genann/example1 differ
+Binary files /home/chetan/Final_DNN/12/genann/example2 and /home/chetan/Final_DNN/genann/example2 differ
+Binary files /home/chetan/Final_DNN/12/genann/example3 and /home/chetan/Final_DNN/genann/example3 differ
+Binary files /home/chetan/Final_DNN/12/genann/example4 and /home/chetan/Final_DNN/genann/example4 differ
+diff /home/chetan/Final_DNN/12/genann/example4.c /home/chetan/Final_DNN/genann/example4.c
+5a6,9
+> #include <time.h>
+> #include <fcntl.h>
+> #include <unistd.h>
+> #include <sys/time.h>
+76a81,83
+>     struct timeval  start, end;
+>     gettimeofday(&start, NULL);
+> 
+84c91
+<     genann *ann = genann_init(4, 1, 4, 3);
+---
+>     genann *ann = genann_init(50, 3, 200, 50);
+109c116,117
+< 
+---
+>     gettimeofday(&end, NULL);
+>     printf("elapsed: %fs\n", (float) (end.tv_usec - start.tv_usec) / 1000000 +(float) (end.tv_sec - start.tv_sec));
+114a123,127
+> 
+> 
+> 
+>     
+>     
+\ No newline at end of file
+Binary files /home/chetan/Final_DNN/12/genann/example4.o and /home/chetan/Final_DNN/genann/example4.o differ
+diff /home/chetan/Final_DNN/12/genann/genann.c /home/chetan/Final_DNN/genann/genann.c
+52a53,57
+> float newPrecision(float n, float i)
+> {
+>     return floor(pow(10,i)*n)/pow(10,i);
+> }
+> 
+108,110c113,118
+<     const int hidden_weights = hidden_layers ? (inputs+1) * hidden + (hidden_layers-1) * (hidden+1) * hidden : 0;
+<     const int output_weights = (hidden_layers ? (hidden+1) : (inputs+1)) * outputs;
+<     const int total_weights = (hidden_weights + output_weights);
+---
+>     const double hidden_weights = hidden_layers ? (inputs+1) * hidden + (hidden_layers-1) * (hidden+1) * hidden : 0;
+>     // printf("hidden_weights:%f\n", hidden_weights);
+>     const double output_weights = (hidden_layers ? (hidden+1) : (inputs+1)) * outputs;
+>     // printf("output_weights:%f\n", output_weights);
+>     const double total_weights = (hidden_weights + output_weights);
+>     // printf("total_weights:%f\n", total_weights);
+112c120
+<     const int total_neurons = (inputs + hidden * hidden_layers + outputs);
+---
+>     const double total_neurons = (inputs + hidden * hidden_layers + outputs);
+128c136
+<     ret->weight = (double*)((char*)ret + sizeof(genann));
+---
+>     ret->weight = (int*)((char*)ret + sizeof(genann));
+137a146,148
+>     // printf("hidden_weights:%f\n", hidden_weights);
+>     // printf("output_weights:%f\n", output_weights);
+>     // printf("total_weights:%f\n", total_weights);
+159c170
+<         rc = fscanf(in, " %le", ann->weight + i);
+---
+>         rc = fscanf(in, " %d", ann->weight + i);//change
+180c191
+<     ret->weight = (double*)((char*)ret + sizeof(genann));
+---
+>     ret->weight = (int*)((char*)ret + sizeof(genann));
+204,207c215,218
+< double const *genann_run(genann const *ann, double const *inputs) {
+<     double const *w = ann->weight;
+<     double *o = ann->output + ann->inputs;
+<     double const *i = ann->output;
+---
+> int const *genann_run(genann const *ann, int const *inputs) {
+>     int const *w = ann->weight;
+>     int *o = ann->output + ann->inputs;
+>     int const *i = ann->output;
+216c227
+<         double *ret = o;
+---
+>         int *ret = o;
+252c263
+<     double const *ret = o;
+---
+>     int const *ret = o;
+271c282,284
+< void genann_train(genann const *ann, double const *inputs, double const *desired_outputs, double learning_rate) {
+---
+> void genann_train(genann const *ann, int const *inputs, int const *desired_outputs, double learning_rate) {
+> 
+>     // int const *test1 = (int) *inputs;
+279,281c292,294
+<         double const *o = ann->output + ann->inputs + ann->hidden * ann->hidden_layers; /* First output. */
+<         double *d = ann->delta + ann->hidden * ann->hidden_layers; /* First delta. */
+<         double const *t = desired_outputs; /* First desired output. */
+---
+>         int const *o = ann->output + ann->inputs + ann->hidden * ann->hidden_layers; /* First output. */
+>         int *d = ann->delta + ann->hidden * ann->hidden_layers; /* First delta. */
+>         int const *t = desired_outputs; /* First desired output. */
+304,305c317,318
+<         double const *o = ann->output + ann->inputs + (h * ann->hidden);
+<         double *d = ann->delta + (h * ann->hidden);
+---
+>         int const *o = ann->output + ann->inputs + (h * ann->hidden);//change
+>         int *d = ann->delta + (h * ann->hidden);//change
+308c321
+<         double const * const dd = ann->delta + ((h+1) * ann->hidden);
+---
+>         int const * const dd = ann->delta + ((h+1) * ann->hidden);//change
+311c324
+<         double const * const ww = ann->weight + ((ann->inputs+1) * ann->hidden) + ((ann->hidden+1) * ann->hidden * (h));
+---
+>         int const * const ww = ann->weight + ((ann->inputs+1) * ann->hidden) + ((ann->hidden+1) * ann->hidden * (h));//change
+333c346
+<         double const *d = ann->delta + ann->hidden * ann->hidden_layers; /* First output delta. */
+---
+>         int const *d = ann->delta + ann->hidden * ann->hidden_layers; /* First output delta. */
+336c349
+<         double *w = ann->weight + (ann->hidden_layers
+---
+>         int *w = ann->weight + (ann->hidden_layers
+341c354
+<         double const * const i = ann->output + (ann->hidden_layers
+---
+>         int const * const i = ann->output + (ann->hidden_layers
+363c376
+<         double const *d = ann->delta + (h * ann->hidden);
+---
+>         int const *d = ann->delta + (h * ann->hidden);
+366c379
+<         double const *i = ann->output + (h
+---
+>         int const *i = ann->output + (h
+371c384
+<         double *w = ann->weight + (h
+---
+>         int *w = ann->weight + (h
+394c407
+<         fprintf(out, " %.20e", ann->weight[i]);
+---
+>         fprintf(out, " %.20d", ann->weight[i]);
+diff /home/chetan/Final_DNN/12/genann/genann.h /home/chetan/Final_DNN/genann/genann.h
+63c63
+<     double *weight;
+---
+>     int *weight;
+66c66
+<     double *output;
+---
+>     int *output;
+69c69
+<     double *delta;
+---
+>     int *delta;
+89c89
+< double const *genann_run(genann const *ann, double const *inputs);
+---
+> int const *genann_run(genann const *ann, int const *inputs);
+92c92
+< void genann_train(genann const *ann, double const *inputs, double const *desired_outputs, double learning_rate);
+---
+> void genann_train(genann const *ann, int const *inputs, int const *desired_outputs, double learning_rate);
+Binary files /home/chetan/Final_DNN/12/genann/genann.o and /home/chetan/Final_DNN/genann/genann.o differ
+Common subdirectories: /home/chetan/Final_DNN/12/genann/.git and /home/chetan/Final_DNN/genann/.git
+Only in /home/chetan/Final_DNN/genann: persist.txt
+Only in /home/chetan/Final_DNN/genann: t1.c
+Binary files /home/chetan/Final_DNN/12/genann/test and /home/chetan/Final_DNN/genann/test differ
+diff /home/chetan/Final_DNN/12/genann/test.c /home/chetan/Final_DNN/genann/test.c
+38c38
+<     double a;
+---
+>     int a;
+92,93c92,93
+<     double input[4][2] = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};
+<     double output[4] = {0, 1, 1, 0};
+---
+>     int input[4][2] = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};
+>     int output[4] = {0, 1, 1, 0};
+121,122c121,122
+<     double input[4][2] = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};
+<     double output[4] = {0, 0, 0, 1};
+---
+>     int input[4][2] = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};
+>     int output[4] = {0, 0, 0, 1};
+Binary files /home/chetan/Final_DNN/12/genann/test.o and /home/chetan/Final_DNN/genann/test.o differ

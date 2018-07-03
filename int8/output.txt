@@ -1,0 +1,1155 @@
+Script started on 2018-05-02 11:54:48-0500
+]0;chetan@chetan-VirtualBox: ~/Final_DNN/genann[01;32mchetan@chetan-VirtualBox[00m:[01;34m~/Final_DNN/genann[00m$ llcd cs553-pa2b/ll[Kgit clone ssh://cgupta5@216.47.142.37/exports/git/cgupta5/cs553-pa2b.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd finalcheck/[Kgit clone ssh://cgupta5@216.47.142.37/exports/git/cgupta5/cs553-pa2b.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cll[Kcd cs553-pa2b/ll[K[K.test/test[C[C[C[C[K[K[K[K[K/test
+GENANN TEST SUITE
+	basic         test.c:44 (0.500000 != 0.000000)
+test.c:47 (0.500000 != 0.000000)
+test.c:50 (0.500000 != 0.000000)
+test.c:55 (0.500000 != 0.000000)
+test.c:60 (1.000000 != 0.000000)
+test.c:63 (0.000000 != 16776960.000000)
+pass: 1   fail: 6      0ms
+	xor           test.c:96 (1.000000 != 0.000000)
+test.c:98 (0.000000 != 1.000000)
+pass: 3   fail: 2      0ms
+	backprop      test.c:114 error 
+pass: 0   fail: 1      0ms
+	train and     test.c:136 (0.000000 != 65536.000000)
+test.c:138 (1.000000 != 65536.000000)
+pass: 2   fail: 2      0ms
+	train or      test.c:161 (1.000000 != 0.000000)
+test.c:162 (1.000000 != 0.000000)
+test.c:163 (1.000000 != 0.000000)
+pass: 1   fail: 3      0ms
+	train xor     test.c:187 (1.000000 != 0.000000)
+test.c:188 (1.000000 != 1072693248.000000)
+test.c:189 (0.000000 != 1072693248.000000)
+pass: 1   fail: 3      0ms
+	persist       pass:60765   fail: 0     41ms
+Segmentation fault (core dumped)
+]0;chetan@chetan-VirtualBox: ~/Final_DNN/genann[01;32mchetan@chetan-VirtualBox[00m:[01;34m~/Final_DNN/genann[00m$ ./test[4Pllcd cs553-pa2b/ll[K./test[K./test
+GENANN TEST SUITE
+	basic         test.c:44 (0.500000 != 0.000000)
+test.c:47 (0.500000 != 0.000000)
+test.c:50 (0.500000 != 0.000000)
+test.c:55 (0.500000 != 0.000000)
+test.c:60 (1.000000 != 0.000000)
+test.c:63 (0.000000 != 16776960.000000)
+pass: 1   fail: 6      0ms
+	xor           test.c:96 (1.000000 != 0.000000)
+test.c:98 (0.000000 != 1.000000)
+pass: 3   fail: 2      0ms
+	backprop      test.c:114 error 
+pass: 0   fail: 1      0ms
+	train and     test.c:136 (0.000000 != 65536.000000)
+test.c:138 (1.000000 != 65536.000000)
+pass: 2   fail: 2      0ms
+	train or      test.c:161 (1.000000 != 0.000000)
+test.c:162 (1.000000 != 0.000000)
+test.c:163 (1.000000 != 0.000000)
+pass: 1   fail: 3      0ms
+	train xor     test.c:187 (1.000000 != 0.000000)
+test.c:188 (1.000000 != 1072693248.000000)
+test.c:189 (0.000000 != 1072693248.000000)
+pass: 1   fail: 3      0ms
+	persist       pass:60765   fail: 0     39ms
+Segmentation fault (core dumped)
+]0;chetan@chetan-VirtualBox: ~/Final_DNN/genann[01;32mchetan@chetan-VirtualBox[00m:[01;34m~/Final_DNN/genann[00m$ ./test
+GENANN TEST SUITE
+	basic         test.c:44 (0.500000 != 0.000000)
+test.c:47 (0.500000 != 0.000000)
+test.c:50 (0.500000 != 0.000000)
+test.c:55 (0.500000 != 0.000000)
+test.c:60 (1.000000 != 0.000000)
+test.c:63 (0.000000 != 16776960.000000)
+pass: 1   fail: 6      0ms
+	xor           test.c:96 (1.000000 != 0.000000)
+test.c:98 (0.000000 != 1.000000)
+pass: 3   fail: 2      0ms
+	backprop      test.c:114 error 
+pass: 0   fail: 1      0ms
+	train and     test.c:136 (0.000000 != 65536.000000)
+test.c:138 (1.000000 != 65536.000000)
+pass: 2   fail: 2      0ms
+	train or      test.c:161 (1.000000 != 0.000000)
+test.c:162 (1.000000 != 0.000000)
+test.c:163 (1.000000 != 0.000000)
+pass: 1   fail: 3      0ms
+	train xor     test.c:187 (1.000000 != 0.000000)
+test.c:188 (1.000000 != 1072693248.000000)
+test.c:189 (0.000000 != 1072693248.000000)
+pass: 1   fail: 3      0ms
+	persist       pass:60765   fail: 0     34ms
+Segmentation fault (core dumped)
+]0;chetan@chetan-VirtualBox: ~/Final_DNN/genann[01;32mchetan@chetan-VirtualBox[00m:[01;34m~/Final_DNN/genann[00m$ ./test
+GENANN TEST SUITE
+	basic         test.c:44 (0.500000 != 0.000000)
+test.c:47 (0.500000 != 0.000000)
+test.c:50 (0.500000 != 0.000000)
+test.c:55 (0.500000 != 0.000000)
+test.c:60 (1.000000 != 0.000000)
+test.c:63 (0.000000 != 16776960.000000)
+pass: 1   fail: 6      0ms
+	xor           test.c:96 (1.000000 != 0.000000)
+test.c:98 (0.000000 != 1.000000)
+pass: 3   fail: 2      0ms
+	backprop      test.c:114 error 
+pass: 0   fail: 1      0ms
+	train and     test.c:136 (0.000000 != 65536.000000)
+test.c:138 (1.000000 != 65536.000000)
+pass: 2   fail: 2      0ms
+	train or      test.c:161 (1.000000 != 0.000000)
+test.c:162 (1.000000 != 0.000000)
+test.c:163 (1.000000 != 0.000000)
+pass: 1   fail: 3      0ms
+	train xor     test.c:187 (1.000000 != 0.000000)
+test.c:188 (1.000000 != 1072693248.000000)
+test.c:189 (0.000000 != 1072693248.000000)
+pass: 1   fail: 3      0ms
+	persist       pass:60765   fail: 0     38ms
+Segmentation fault (core dumped)
+]0;chetan@chetan-VirtualBox: ~/Final_DNN/genann[01;32mchetan@chetan-VirtualBox[00m:[01;34m~/Final_DNN/genann[00m$ ./test
+GENANN TEST SUITE
+	basic         test.c:44 (0.500000 != 0.000000)
+test.c:47 (0.500000 != 0.000000)
+test.c:50 (0.500000 != 0.000000)
+test.c:55 (0.500000 != 0.000000)
+test.c:60 (1.000000 != 0.000000)
+pass: 2   fail: 5      0ms
+	xor           pass: 5   fail: 0      0ms
+	backprop      test.c:114 error 
+pass: 0   fail: 1      0ms
+	train and     test.c:138 (1.000000 != 0.000000)
+pass: 3   fail: 1      0ms
+	train or      test.c:161 (1.000000 != 0.000000)
+test.c:162 (1.000000 != 0.000000)
+test.c:163 (1.000000 != 0.000000)
+pass: 1   fail: 3      0ms
+	train xor     test.c:187 (1.000000 != 0.000000)
+test.c:188 (1.000000 != 0.000000)
+pass: 2   fail: 2      0ms
+	persist       pass:60765   fail: 0     38ms
+Segmentation fault (core dumped)
+]0;chetan@chetan-VirtualBox: ~/Final_DNN/genann[01;32mchetan@chetan-VirtualBox[00m:[01;34m~/Final_DNN/genann[00m$ ./test
+GENANN TEST SUITE
+	basic         test.c:44 (0.500000 != 0.000000)
+test.c:47 (0.500000 != 0.000000)
+test.c:50 (0.500000 != 0.000000)
+test.c:55 (0.500000 != 0.000000)
+test.c:60 (1.000000 != 0.000000)
+pass: 2   fail: 5      0ms
+	xor           pass: 5   fail: 0      0ms
+	backprop      test.c:114 error 
+pass: 0   fail: 1      0ms
+	train and     test.c:138 (1.000000 != 0.000000)
+pass: 3   fail: 1      0ms
+	train or      test.c:161 (1.000000 != 0.000000)
+test.c:162 (1.000000 != 0.000000)
+test.c:163 (1.000000 != 0.000000)
+pass: 1   fail: 3      0ms
+	train xor     test.c:187 (1.000000 != 0.000000)
+test.c:188 (1.000000 != 0.000000)
+pass: 2   fail: 2      0ms
+	persist       pass:60765   fail: 0     36ms
+Segmentation fault (core dumped)
+]0;chetan@chetan-VirtualBox: ~/Final_DNN/genann[01;32mchetan@chetan-VirtualBox[00m:[01;34m~/Final_DNN/genann[00m$ ./test
+GENANN TEST SUITE
+	basic         test.c:44 (0.500000 != 0.000000)
+test.c:47 (0.500000 != 0.000000)
+test.c:50 (0.500000 != 0.000000)
+test.c:55 (0.500000 != 0.000000)
+test.c:60 (1.000000 != 0.000000)
+pass: 2   fail: 5      0ms
+	xor           pass: 5   fail: 0      0ms
+	backprop      test.c:114 error 
+pass: 0   fail: 1      0ms
+	train and     test.c:138 (1.000000 != 0.000000)
+pass: 3   fail: 1      0ms
+	train or      test.c:161 (1.000000 != 0.000000)
+test.c:162 (1.000000 != 0.000000)
+test.c:163 (1.000000 != 0.000000)
+pass: 1   fail: 3      0ms
+	train xor     test.c:187 (1.000000 != 0.000000)
+test.c:188 (1.000000 != 0.000000)
+pass: 2   fail: 2      0ms
+	persist       pass:60765   fail: 0     35ms
+Segmentation fault (core dumped)
+]0;chetan@chetan-VirtualBox: ~/Final_DNN/genann[01;32mchetan@chetan-VirtualBox[00m:[01;34m~/Final_DNN/genann[00m$ ./test[4Pllcd cs553-pa2b/ll[K./test[Kmake all
+make: Nothing to be done for 'all'.
+]0;chetan@chetan-VirtualBox: ~/Final_DNN/genann[01;32mchetan@chetan-VirtualBox[00m:[01;34m~/Final_DNN/genann[00m$ make all
+cc -Wall -Wshadow -O3 -g -march=native   -c -o test.o test.c
+cc   test.o genann.o  -lm -o test
+]0;chetan@chetan-VirtualBox: ~/Final_DNN/genann[01;32mchetan@chetan-VirtualBox[00m:[01;34m~/Final_DNN/genann[00m$ make all[2P./test
+GENANN TEST SUITE
+	basic         test.c:44 (0.500000 != 0.000000)
+test.c:47 (0.500000 != 0.000000)
+test.c:50 (0.500000 != 0.000000)
+test.c:55 (0.500000 != 0.000000)
+test.c:60 (1.000000 != 0.000000)
+pass: 2   fail: 5      0ms
+	xor           pass: 5   fail: 0      0ms
+	backprop      test.c:114 error 
+pass: 0   fail: 1      0ms
+	train and     test.c:138 (1.000000 != 0.000000)
+pass: 3   fail: 1      0ms
+	train or      test.c:161 (1.000000 != 0.000000)
+test.c:162 (1.000000 != 0.000000)
+test.c:163 (1.000000 != 0.000000)
+pass: 1   fail: 3      0ms
+	train xor     test.c:187 (1.000000 != 0.000000)
+test.c:188 (1.000000 != 0.000000)
+pass: 2   fail: 2      0ms
+	persist       pass:60765   fail: 0     39ms
+SOME TESTS FAILED (60778/60790)
+]0;chetan@chetan-VirtualBox: ~/Final_DNN/genann[01;32mchetan@chetan-VirtualBox[00m:[01;34m~/Final_DNN/genann[00m$ ./ge[K[Kexample
+example/    example1    example1.c  example2    example2.c  example3    example3.c  example4    example4.c  
+]0;chetan@chetan-VirtualBox: ~/Final_DNN/genann[01;32mchetan@chetan-VirtualBox[00m:[01;34m~/Final_DNN/genann[00m$ ./example4
+GENANN example 4.
+Train an ANN on the IRIS dataset using backpropagation.
+Loading 150 data points from example/iris.data
+Training for 5000 loops over data.
+0/150 correct (0.0%).
+elapsed: 300.060913s
+]0;chetan@chetan-VirtualBox: ~/Final_DNN/genann[01;32mchetan@chetan-VirtualBox[00m:[01;34m~/Final_DNN/genann[00m$ hitory
+No command 'hitory' found, did you mean:
+ Command 'hitori' from package 'hitori' (universe)
+hitory: command not found
+]0;chetan@chetan-VirtualBox: ~/Final_DNN/genann[01;32mchetan@chetan-VirtualBox[00m:[01;34m~/Final_DNN/genann[00m$ gist[K[K[K[Khisr[Kti[Kory
+  581  ./main cpu_HP_4thread.dat 
+  582  gcc -pthread -mavx -o main main.c
+  583  ./main cpu_HP_4thread.dat 
+  584  gcc -pthread -mavx -o main main.c
+  585  ./main cpu_HP_4thread.dat 
+  586  gcc -pthread -mavx -o main main.c
+  587  ./main cpu_HP_4thread.dat 
+  588  gcc -pthread -mavx -o main main.c
+  589  ./main cpu_HP_4thread.dat 
+  590  gcc -pthread -mavx -o main main.c
+  591  ./main cpu_HP_4thread.dat 
+  592  gcc -pthread -mavx -o main main.c
+  593  ./main cpu_HP_4thread.dat 
+  594  gcc -pthread -mavx -o main main.c
+  595  ./main cpu_HP_4thread.dat 
+  596  gcc -pthread -mavx -o main main.c
+  597  ./main cpu_HP_4thread.dat 
+  598  gcc -pthread -mavx -o main main.c
+  599  ./main cpu_HP_4thread.dat 
+  600  gcc -Wall -pthread -mavx -o main main.c
+  601  gcc -Wall -O2 -pthread -mavx -o main main.c
+  602  cd ~/cloud/cs553-pa1/disk/
+  603  ls
+  604  gcc -pthread -o main main.c
+  605  ./main disk-RR-10000-4thread.dat 
+  606  gcc -pthread -o main main.c
+  607  ./main disk-RR-10000-4thread.dat 
+  608  ./main disk-WR-10000-4thread.dat 
+  609  rm /tmp/foo.txt 
+  610  ./main disk-WR-10000-4thread.dat 
+  611  makefile
+  612  cd ~/cloud/cs553-pa1/cpu 
+  613  makefile
+  614  make
+  615  make all
+  616  cd ~/cloud/cs553-pa1/disk/
+  617  rm /tmp/foo.txt 
+  618  gcc -pthread -o main main.c
+  619  cd ~/cloud/cs553-pa1/memory/
+  620  gcc -pthread -o main main.c
+  621  ./main memory-RWS-10000000-1thread.dat 
+  622  gcc -pthread -o main main.c
+  623  ./main memory-RWS-10000000-1thread.dat 
+  624  ./main memory-RWS-1000000-1thread.dat 
+  625  gcc -pthread -o main main.c
+  626  ./main memory-RWS-100000-1thread.dat 
+  627  gcc -pthread -o main main.c
+  628  ./main memory-RWS-100000-1thread.dat 
+  629  gcc -pthread -o main main.c
+  630  ./main memory-RWS-100000-1thread.dat 
+  631  gcc -pthread -o main main.c
+  632  ./main memory-RWS-100000-1thread.dat 
+  633  gcc -pthread -o main main.c
+  634  ./main memory-RWS-100000-1thread.dat 
+  635  gcc -pthread -o main main.c
+  636  ./main memory-RWS-100000-1thread.dat 
+  637  gcc -pthread -o main main.c
+  638  ./main memory-RWS-100000-1thread.dat 
+  639  gcc -pthread -o main main.c
+  640  ./main memory-RWS-100000-1thread.dat 
+  641  gcc -pthread -o main main.c
+  642  ./main memory-RWS-100000-1thread.dat 
+  643  gcc -pthread -o main main.c
+  644  ./main memory-RWS-100000-1thread.dat 
+  645  gcc -pthread -o main main.c
+  646  ./main memory-RWS-100000-1thread.dat 
+  647  gcc -pthread -o main main.c
+  648  ./main memory-RWS-100000-1thread.dat 
+  649  ./main memory-RWR-1000000-2thread.dat 
+  650  gcc -pthread -o main main.c
+  651  ./main memory-RWR-1000000-2thread.dat 
+  652  gcc -pthread -o main main.c
+  653  ./main memory-RWR-1000000-2thread.dat 
+  654  gcc -pthread -o main main.c
+  655  ./main memory-RWR-1000000-2thread.dat 
+  656  gcc -pthread -o main main.c
+  657  ./main memory-RWR-1000000-2thread.dat 
+  658  rm /tmp/foo.txt 
+  659  cd ~/cloud/cs553-pa1/network/
+  660  ls
+  661  gcc -pthread -o serf serf.c 
+  662  ./main network-TCP-1-1thread.dat 
+  663  ./serf network-TCP-1-1thread.dat 
+  664  ./main network-TCP-1-1thread.dat 
+  665  gcc -pthread -o serf serf.c 
+  666  ./serf network-TCP-1-1thread.dat 
+  667  gcc -pthread -o serf serf.c 
+  668  ./serf network-TCP-1-1thread.dat 
+  669  gcc -pthread -o serf serf.c 
+  670  ./serf network-TCP-1-1thread.dat 
+  671  history
+  672  gcc -pthread -o serf serf.c 
+  673  ./serf network-TCP-1-1thread.dat 
+  674  gcc -pthread -o serf serf.c 
+  675  ./serf network-TCP-1-1thread.dat 
+  676  netstat -np | grep 11155*
+  677  netstat -np | grep 1313*
+  678  ./serf network-TCP-1-1thread.dat 
+  679  netstat -np | grep 1313*
+  680  ./serf network-TCP-1-1thread.dat 
+  681  netstat -np | grep 1313*
+  682  ./serf network-TCP-1-1thread.dat 
+  683  ./serf network-TCP-1-4thread.dat 
+  684  netstat -np | grep 1313*
+  685  ./serf network-TCP-1-4thread.dat 
+  686  netstat -np | grep 1313*
+  687  gcc -pthread -o serf serf.c 
+  688  ./serf network-TCP-1-4thread.dat 
+  689  netstat -np | grep 1313*
+  690  ./serf network-TCP-1-4thread.dat 
+  691  gcc -pthread -o serf serf.c 
+  692  ./serf network-TCP-1-4thread.dat 
+  693  ./serf network-TCP-1-4thread.dat 
+  694  fuser -k 8080/tcp
+  695  fuser -k 1313/tcp
+  696  user -k 8080/tcp
+  697  fuser -k 1313/tcp
+  698  ./serf network-TCP-1-4thread.dat 
+  699  netstat -np | grep 1313*
+  700  ./serf network-TCP-1-4thread.dat 
+  701  netstat -np | grep 1313*
+  702  gcc -pthread -o serf serf.c 
+  703  ./serf network-TCP-1-4thread.dat 
+  704  netstat -np | grep 1313*
+  705  fuser -k 1313/tcp
+  706  netstat -np | grep 1313*
+  707  netstat -np | grep 131*
+  708  fuser -k 131*/tcp
+  709  fuser 131*/tcp
+  710  fuser 1312/tcp
+  711  fuser 1313/tcp
+  712  fuser 1314/tcp
+  713  ./serf network-TCP-1-4thread.dat 
+  714  netstat -np | grep 131*
+  715  netstat -np | grep 1313*
+  716  ./serf network-TCP-1-4thread.dat 
+  717  ./serf network-TCP-1-8thread.dat 
+  718  gcc -pthread -o serf serf.c 
+  719  ./serf network-TCP-1-8thread.dat 
+  720  netstat -np | grep 1313*
+  721  ./serf network-TCP-1-8thread.dat 
+  722  gcc -pthread -o serf serf.c 
+  723  ./serf network-TCP-1-8thread.dat 
+  724  gcc -pthread -o serf serf.c 
+  725  ./serf network-TCP-1-8thread.dat 
+  726  netstat -np | grep 1313*
+  727  fuser -k 131*/tcp
+  728  fuser -k 1313/tcp
+  729  netstat -np | grep 1313*
+  730  kill -9 $(lsof -t -i:1313)
+  731  lsof -i:1313
+  732  netstat -np | grep 1313*
+  733  ./serf network-TCP-1-8thread.dat 
+  734  gcc -pthread -o serf serf.c 
+  735  ./serf network-TCP-1-8thread.dat 
+  736  gcc -pthread -o serf serf.c 
+  737  ./serf network-TCP-1-8thread.dat 
+  738  gcc -pthread -o serf serf.c 
+  739  ./serf network-TCP-1-8thread.dat 
+  740  gcc -pthread -o serf serf.c 
+  741  ./serf network-TCP-1-8thread.dat 
+  742  lsof -i:1313
+  743  netstat -np | grep 1313*
+  744  lsof -i:1313
+  745  lsof -t -i:1313
+  746  netstat -np | grep 1313*
+  747  ./serf network-TCP-1-8thread.dat 
+  748  netstat -np | grep 1313*
+  749  ./serf network-TCP-1-8thread.dat 
+  750  netstat -np | grep 131*
+  751  netstat -np | grep 1323
+  752  ./serf network-TCP-1-8thread.dat 
+  753  gcc -pthread -o serf serf.c 
+  754  ./serf network-TCP-1-8thread.dat 
+  755  gcc -pthread -o serf serf.c 
+  756  ./serf network-TCP-1-8thread.dat 
+  757  gcc -pthread -o serf serf.c 
+  758  ./serf network-TCP-1-8thread.dat 
+  759  gcc -pthread -o serf serf.c 
+  760  ./serf network-TCP-1-8thread.dat 
+  761  netstat -np | grep 131*
+  762  netstat -np | grep 1313*
+  763  lsof -t -i:1313
+  764  netstat -np | grep 1313*
+  765  ./serf network-TCP-1-8thread.dat 
+  766  gcc -pthread -o serf serf.c 
+  767  ./serf network-TCP-1-8thread.dat 
+  768  netstat -np | grep 1313*
+  769  ./serf network-TCP-1-8thread.dat 
+  770  netstat -np | grep 1313*
+  771  netstat -np | grep 1363*
+  772  kill 56826
+  773  kill tcp
+  774  netstat -np | grep 1313*
+  775  netstat -np | grep 1363*
+  776  ./serf network-TCP-1-8thread.dat 
+  777  gcc -pthread -o serf serf.c 
+  778  ./serf network-TCP-1-8thread.dat 
+  779  netstat -np | grep 1363*
+  780  netstat -np | grep 1353*
+  781  ./serf network-TCP-1-8thread.dat 
+  782  gcc -pthread -o serf serf.c 
+  783  ./serf network-TCP-1-8thread.dat 
+  784  gcc -pthread -o serf serf.c 
+  785  ./serf network-TCP-1-8thread.dat 
+  786  netstat -np | grep 1363*
+  787  netstat -ap | grep :1363
+  788  ./serf network-TCP-1-8thread.dat 
+  789  netstat -ap | grep :1363
+  790  gcc -pthread -o serf serf.c 
+  791  ./serf network-TCP-1-8thread.dat 
+  792  netstat -ap | grep :1313
+  793  ./serf network-TCP-1-8thread.dat 
+  794  netstat -ap | grep :1313
+  795  gcc -pthread -o serf serf.c 
+  796  ./serf network-TCP-1-8thread.dat 
+  797  netstat -ap | grep :1313
+  798  netstat -ap | grep :1313*
+  799  ./serf network-TCP-1-8thread.dat 
+  800  bpkg install aurora/rmate
+  801  sudo wget -O /usr/local/bin/rmate https://raw.github.com/aurora/rmate/master/rmate
+  802  cd ~/cloud/cs553-pa1/disk/
+  803  ls -l
+  804  ls
+  805  ls -t
+  806  ls -a
+  807  BBBBBBB
+  808  ls /tmp/
+  809  gcc -pthread -o main main.c
+  810  ./run_disk.sh
+  811  chmod 777 run_disk.sh
+  812  ./run_disk.sh
+  813  ls /tmp/
+  814  ls -l /tmp/
+  815  rm /tmp/foo.txt 
+  816  cd ~/cloud/cs553-pa1/cpu/
+  817  ls -a |sort
+  818  gcc -pthread -o main main.c -mavx
+  819  chmod 777 run_cpu.sh
+  820  ./run_cpu.sh
+  821  ssh cgupta5@129.114.33.105
+  822  cgupta@@216.47.142.3
+  823  @216.47.142.37
+  824  ssh cgupta5@216.47.142.3
+  825  ssh cgupta5@216.47.142.37
+  826  ssh -X cgupta5@216.47.142.37
+  827  ls /tmp/
+  828  ls -ltr /tmp/
+  829  rm /tmp/foo.txt 
+  830  ls -ltr /tmp/
+  831  rm /tmp/foo.txt 
+  832  ls -ltr /tmp/
+  833  rm /tmp/foo.txt 
+  834  ls -ltr /tmp/
+  835  rm /tmp/foo.txt 
+  836  ls -ltr /tmp/
+  837  rm /tmp/foo.txt 
+  838  ls -ltr /tmp/
+  839  rm /tmp/foo.txt 
+  840  ls -ltr /tmp/
+  841  rm /tmp/foo.txt 
+  842  ls -ltr /tmp/
+  843  bhaiya
+  844  ls -ltr /tmp/
+  845  rm /tmp/foo.txt 
+  846  ls -ltr /tmp/
+  847  scp -r /home/chetan/cloud/Data1.zip cgupta5@216.47.142.37:~/Cloud
+  848  scp -r /home/chetan/cloud/Data1.tar.xz  cgupta5@216.47.142.37:~/Cloud
+  849  ls -ltr /tmp/
+  850  rm /tmp/foo.txt 
+  851  history
+  852  ssh cgupta5@216.407.142.37
+  853  ssh cgupta5@216.47.142.37
+  854  gcc -o client client.c 
+  855  history
+  856  ssh cgupta5@216.47.142.37
+  857  ssh cgupta5@@129.114.33.105
+  858  ssh cgupta5@129.114.33.105
+  859  cd ~/cloud/cs553-pa1/network/
+  860  gcc - pthread -o clif clif.c 
+  861  ls
+  862  gcc - pthread -o clif clif.c 
+  863  gcc -pthread -o clif clif.c 
+  864  ./main network-TCP-1-1thread.dat
+  865  ./clif network-TCP-1-1thread.dat
+  866  gcc -pthread -o clif clif.c 
+  867  ./clif network-TCP-1-1thread.dat
+  868  gcc -pthread -o clif clif.c 
+  869  ./clif network-TCP-1-1thread.dat
+  870  gcc -pthread -o clif clif.c 
+  871  ./clif network-TCP-1-1thread.dat
+  872  gcc -pthread -o clif clif.c 
+  873  ./clif network-TCP-1-1thread.dat
+  874  gcc -pthread -o clif clif.c 
+  875  ./clif network-TCP-1-1thread.dat
+  876  gcc -pthread -o clif clif.c 
+  877  ./clif network-TCP-1-1thread.dat
+  878  ./clif network-TCP-1-4thread.dat
+  879  ./clif network-TCP-1-1thread.dat
+  880  ./clif network-TCP-1-4thread.dat
+  881  gcc -pthread -o clif clif.c 
+  882  ./clif network-TCP-1-4thread.dat
+  883  gcc -pthread -o clif clif.c 
+  884  ./clif network-TCP-1-4thread.dat
+  885  gcc -pthread -o clif clif.c 
+  886  ./clif network-TCP-1-4thread.dat
+  887  gcc -pthread -o clif clif.c 
+  888  ./clif network-TCP-1-4thread.dat
+  889  ./clif network-TCP-1-8thread.dat
+  890  gcc -pthread -o clif clif.c 
+  891  ./clif network-TCP-1-8thread.dat
+  892  gcc -pthread -o clif clif.c 
+  893  ./clif network-TCP-1-8thread.dat
+  894  gcc -pthread -o clif clif.c 
+  895  ./clif network-TCP-1-8thread.dat
+  896  gcc -pthread -o clif clif.c 
+  897  ./clif network-TCP-1-8thread.dat
+  898  gcc -pthread -o clif clif.c 
+  899  ./clif network-TCP-1-8thread.dat
+  900  gcc -pthread -o clif clif.c 
+  901  ./clif network-TCP-1-8thread.dat
+  902  gcc -pthread -o clif clif.c 
+  903  ./clif network-TCP-1-8thread.dat
+  904  gcc -pthread -o clif clif.c 
+  905  ./clif network-TCP-1-8thread.dat
+  906  gcc -pthread -o clif clif.c 
+  907  ./clif network-TCP-1-8thread.dat
+  908  gcc -pthread -o clif clif.c 
+  909  ./clif network-TCP-1-8thread.dat
+  910  gcc -pthread -o clif clif.c 
+  911  ./clif network-TCP-1-8thread.dat
+  912  gcc -pthread -o clif clif.c 
+  913  ./clif network-TCP-1-8thread.dat
+  914  ~/cloud/cs553-pa1/cpu
+  915  cd ~/cloud/cs553-pa1/cpu
+  916  gcc -pthread -mavx -o main main.c
+  917  ./run_cpu.sh 
+  918  gcc -pthread -mavx -o main main.c
+  919  ./run_cpu.sh 
+  920  gcc -pthread -mavx -o main main.c
+  921  ./run_cpu.sh 
+  922  gcc -pthread -mavx -o main main.c
+  923  ./run_cpu.sh 
+  924  gcc -pthread -mavx -o main main.c
+  925  ./run_cpu.sh 
+  926  gcc -pthread -mavx -o main main.c
+  927  ./run_cpu.sh 
+  928  cd ~/cloud/cs553-pa1/network/
+  929  gcc -pthread  -o main main.c
+  930  gcc -pthread -o main main.c
+  931  ls
+  932  cd ~/cloud/cs553-pa1/disk/
+  933  gcc -pthread -o main main.c
+  934  ./run_disk.sh 
+  935  ./main disk-WR-1-128thread.dat
+  936  ./main disk-WR-1-8thread.dat
+  937  gcc -pthread -o main main.c
+  938  ./main disk-WR-1-8thread.dat
+  939  gcc -pthread -o main main.c
+  940  ./main disk-WR-1-8thread.dat
+  941  gcc -pthread -o main main.c
+  942  ./main disk-WR-1-8thread.dat
+  943  gcc -pthread -o main main.c
+  944  ./main disk-WR-1-8thread.dat
+  945  gcc -pthread -o main main.c
+  946  ./main disk-WR-1-8thread.dat
+  947  gcc -pthread -o main main.c
+  948  ./main disk-WR-1-8thread.dat
+  949  gcc -pthread -o main main.c
+  950  ./main disk-WR-1-8thread.dat
+  951  gcc -pthread -o main main.c
+  952  ./main disk-WR-1-128thread.dat
+  953  ./main disk-RR-1-128thread.dat
+  954  ./main disk-RS-1-128thread.dat
+  955  ls -ltr
+  956  ./main disk-RS-1000-128thread.dat
+  957  ./main disk-RS-1000-4thread.dat
+  958  ./main disk-RS-1000-128thread.dat
+  959  ./main disk-RS-1000-8thread.dat
+  960  ./main disk-WS-1000-8thread.dat
+  961  ls -a |sort
+  962  ./main disk-WS-1000-4thread.dat
+  963  gcc -pthread -o main main.c
+  964  ./main disk-RS-1000-8thread.dat
+  965  ./main disk-RS-1000-4thread.dat
+  966  ./main disk-WS-1000-4thread.dat
+  967  ./main disk-RS-1000-4thread.dat
+  968  ./main disk-WS-1000-4thread.dat
+  969  gcc -pthread -o main main.c
+  970  ./main disk-WS-1000-4thread.dat
+  971  ./main disk-RS-1000-4thread.dat
+  972  gcc -pthread -o main main.c
+  973  ./run_disk.sh 
+  974  gcc -pthread -o main main.c
+  975  ./run_disk.sh 
+  976  gcc -pthread -o main main.c
+  977  ./run_disk.sh 
+  978  gcc -pthread -o main main.c
+  979  ./run_disk.sh 
+  980  gcc -pthread -o main main.c
+  981  ./run_disk.sh 
+  982  gcc -pthread -o main main.c
+  983  ./run_disk.sh 
+  984  gcc -pthread -o main main.c
+  985  ./run_disk.sh 
+  986  gcc -pthread -o main main.c
+  987  ./main disk-WS-1000-4thread.dat
+  988  ./main disk-SR-1000-4thread.dat
+  989  ./main disk-RS-1000-4thread.dat
+  990  gcc -pthread -o main main.c
+  991  ./main disk-WS-1000-4thread.dat
+  992  ./main disk-RS-1000-4thread.dat
+  993  gcc -pthread -o main main.c
+  994  ./main disk-RS-1000-4thread.dat
+  995  ./main disk-WS-1000-4thread.dat
+  996  gcc -pthread -o main main.c
+  997  ./main disk-WS-1000-4thread.dat
+  998  gcc -pthread -o main main.c
+  999  ./main disk-WS-1000-4thread.dat
+ 1000  ./main disk-RS-1000-4thread.dat
+ 1001  ./main disk-WS-1000-4thread.dat
+ 1002  gcc -pthread -o main main.c
+ 1003  ./main disk-WS-1000-4thread.dat
+ 1004  gcc -pthread -o main main.c
+ 1005  ./main disk-RS-1000-4thread.dat
+ 1006  gcc -pthread -o main main.c
+ 1007  ./main disk-RS-1000-4thread.dat
+ 1008  /main disk-RS-1000-4thread.dat
+ 1009  ./main disk-WR-1000-4thread.dat
+ 1010  gcc -pthread -o main main.c
+ 1011  ./main disk-WR-1000-4thread.dat
+ 1012  ./main disk-WS-1000-4thread.dat
+ 1013  ./main disk-RS-1000-4thread.dat
+ 1014  ./main disk-RS-1-4thread.dat
+ 1015  ./main disk-RR-1-4thread.dat
+ 1016  ./run_disk.sh 
+ 1017  ./main disk-RR-1-4thread.dat
+ 1018  gcc -pthread -o main main.c
+ 1019  ./run_disk.sh 
+ 1020  gcc -pthread -o main main.c
+ 1021  ./run_disk.sh 
+ 1022  gcc -pthread -o main main.c
+ 1023  ./run_disk.sh 
+ 1024  gcc -pthread -o main main.c
+ 1025  ./run_disk.sh 
+ 1026  ./run_disk.sh ssh -X cgupta5@216.47.142.37
+ 1027  ssh -X cgupta5@216.47.142.37
+ 1028  cd ~/cloud/cs553-pa1/memory/
+ 1029  ls
+ 1030  gcc -pthread -o main main.c 
+ 1031  ./main memory-RWR-1-1thread.dat
+ 1032  ./main memory-RWS-10000000-1thread.dat
+ 1033  ./main memory-RWS-10000000-4thread.dat
+ 1034  gcc -pthread -o main main.c 
+ 1035  ./main memory-RWS-10000000-4thread.dat
+ 1036  gcc -pthread -o main main.c 
+ 1037  ./main memory-RWS-10000000-4thread.dat
+ 1038  gcc -pthread -o main main.c 
+ 1039  ./main memory-RWS-10000000-4thread.dat
+ 1040  gcc -pthread -o main main.c 
+ 1041  ./main memory-RWS-10000000-4thread.dat
+ 1042  gcc -pthread -o main main.c 
+ 1043  ./main memory-RWS-10000000-4thread.dat
+ 1044  gcc -pthread -o main main.c 
+ 1045  ./main memory-RWS-10000000-4thread.dat
+ 1046  gcc -pthread -o main main.c 
+ 1047  ./main memory-RWS-10000000-4thread.dat
+ 1048  gcc -pthread -o main main.c 
+ 1049  ./main memory-RWS-10000000-4thread.dat
+ 1050  gcc -pthread -o main main.c 
+ 1051  ./main memory-RWS-10000000-4thread.dat
+ 1052  gcc -pthread -o main main.c 
+ 1053  ./main memory-RWS-10000000-4thread.dat
+ 1054  gcc -pthread -o main main.c 
+ 1055  ./main memory-RWS-10000000-4thread.dat
+ 1056  gcc -pthread -o main main.c 
+ 1057  ./main memory-RWS-10000000-4thread.dat
+ 1058  gcc -pthread -o main main.c 
+ 1059  ./main memory-RWS-10000000-4thread.dat
+ 1060  gcc -pthread -o main main.c 
+ 1061  ./main memory-RWS-10000000-4thread.dat
+ 1062  gcc -pthread -o main main.c 
+ 1063  ./main memory-RWS-10000000-4thread.dat
+ 1064  gcc -pthread -o main main.c 
+ 1065  ./main memory-RWS-10000000-4thread.dat
+ 1066  gcc -pthread -o main main.c 
+ 1067  ./main memory-RWS-10000000-4thread.dat
+ 1068  gcc -pthread -o main main.c 
+ 1069  ./main memory-RWS-10000000-4thread.dat
+ 1070  gcc -pthread -o main main.c 
+ 1071  ./main memory-RWS-10000000-4thread.dat
+ 1072  gcc -pthread -o main main.c 
+ 1073  ./main memory-RWS-10000000-4thread.dat
+ 1074  gcc -pthread -o main main.c 
+ 1075  ./main memory-RWS-10000000-4thread.dat
+ 1076  gcc -pthread -o main main.c 
+ 1077  ./main memory-RWS-10000000-4thread.dat
+ 1078  gcc -pthread -o main main.c 
+ 1079  ./main memory-RWS-10000000-4thread.dat
+ 1080  gcc -pthread -o main main.c 
+ 1081  ./main memory-RWS-10000000-4thread.dat
+ 1082  gcc -pthread -o main main.c 
+ 1083  ./main memory-RWS-10000000-4thread.dat
+ 1084  gcc -pthread -o main main.c 
+ 1085  ./main memory-RWS-10000000-4thread.dat
+ 1086  ./main memory-RWS-1-4thread.dat
+ 1087  gcc -pthread -o main main.c 
+ 1088  ./main memory-RWS-1-4thread.dat
+ 1089  gcc -pthread -o main main.c 
+ 1090  ./main memory-RWS-1-4thread.dat
+ 1091  gcc -pthread -o main main.c 
+ 1092  ./main memory-RWS-1-4thread.dat
+ 1093  gcc -pthread -o main main.c 
+ 1094  ./main memory-RWS-1-4thread.dat
+ 1095  gcc -pthread -o MyRAMBench MyRAMBench.c 
+ 1096  ./MyRAMBench memory-RWS-1-4thread.dat
+ 1097  gcc -pthread -o MyRAMBench MyRAMBench.c 
+ 1098  ./MyRAMBench memory-RWS-1-4thread.dat
+ 1099  ./MyRAMBench memory-RWR-1000-4thread.dat
+ 1100  gcc -pthread -o MyRAMBench MyRAMBench.c 
+ 1101  ls
+ 1102  ./run_mem.sh
+ 1103  chmod 777 run_mem.sh 
+ 1104  ./run_mem.sh
+ 1105  gcc -pthread -o MyRAMBench MyRAMBench.c 
+ 1106  ./run_mem.sh
+ 1107  gcc -pthread -o MyRAMBench MyRAMBench.c 
+ 1108  ./run_mem.sh
+ 1109  gcc -pthread -o MyRAMBench MyRAMBench.c 
+ 1110  ./run_mem.sh
+ 1111  cd ~/cloud/cs553-pa1/cpu
+ 1112  ls
+ 1113  gcc -mavx -pthread -o MyCPUBench MyCPUBench.c 
+ 1114  ./MyCPUBench cpu_DP_4thread.dat 
+ 1115  ./run_mem.sh
+ 1116  ./run_cpu.sh
+ 1117  cd ~/cloud/cs553-pa1/memory/
+ 1118  ls
+ 1119  cd ~/cloud/cs553-pa1/disk/
+ 1120  ls
+ 1121  gcc -pthread -o MyDiskBench MyDiskBench.c 
+ 1122  ./run_disk.sh
+ 1123  ls /tmp/
+ 1124  rm /tmp/foo.txt 
+ 1125  scp -r /home/chetan/cloud/cs553-pa1/cpu/MyCPUBench  cgupta5@129.114.33.105:~/Cloud/cs553-pa1/cpu/
+ 1126  ssh cgupta5@129.114.33.105
+ 1127  ./MyNETBench-UDP network-UDP-32000-8thread.dat 1
+ 1128  ./MyNETBench-UDP network-UDP-32000-8thread.dat 0
+ 1129  ./MyNETBench-UDP network-UDP-32000-8thread.dat 1
+ 1130  cd ..
+ 1131  cd disk/
+ 1132  ./run_disk.sh 
+ 1133  cd ~/cloud/cs553-pa1/cpu/
+ 1134  ls -a |sorr
+ 1135  ls -a |sort
+ 1136  gcc -pthread -mavx -o MyCPUBench MyCPUBench.c
+ 1137  chmod 777 frun_cpu.sh 
+ 1138  ./frun_cpu.sh 
+ 1139  cd ~/cloud/cs553-pa1/memory/
+ 1140  gcc -pthread -o MyRAMBench MyRAMBench.c 
+ 1141  ./run_mem.sh 
+ 1142  gcc -pthread -o MyRAMBench MyRAMBench.c 
+ 1143  ./run_mem.sh 
+ 1144  cd ..
+ 1145  cd network/
+ 1146  ./run_net.sh 
+ 1147  cat /home/chetan/cloud/cs553-pa1/network/
+ 1148  git clone ssh://cgupta5@129.114.33.105/exports/git/public/cs553-pa1.git
+ 1149  cd ..
+ 1150  cd \
+ 1151  cd Pa
+ 1152  cd PA1
+ 1153  git clone ssh://cgupta5@129.114.33.105/exports/git/public/cs553-pa1.git
+ 1154  cgupta5@129.114.33.105
+ 1155  ssh cgupta5@129.114.33.105
+ 1156  git clone ssh://cgupta5@129.114.33.105/exports/git/public/cs553-pa1.git
+ 1157  ls
+ 1158  gcc -pthread -o network-UDP-32000-8thread.dat 
+ 1159  gcc -pthread -o MyNETBench-UDP MyNETBench-UDP.c 
+ 1160  ./MyNETBench-UDP network-UDP-32000-8thread.dat 0 &./MyNETBench-UDP network-UDP-32000-8thread.dat 1
+ 1161  gcc -pthread -o MyNETBench-UDP MyNETBench-UDP.c 
+ 1162  ./MyNETBench-UDP network-UDP-32000-8thread.dat 0
+ 1163  gcc -pthread -o MyNETBench-UDP MyNETBench-UDP.c 
+ 1164  ./MyNETBench-UDP network-UDP-32000-8thread.dat 0
+ 1165  gcc -pthread -o MyNETBench-UDP MyNETBench-UDP.c 
+ 1166  ./MyNETBench-UDP network-UDP-32000-8thread.dat 0
+ 1167  gcc -pthread -o MyNETBench-UDP MyNETBench-UDP.c 
+ 1168  ./MyNETBench-UDP network-UDP-32000-8thread.dat 0
+ 1169  ls
+ 1170  sbatch UDP1.slurm 
+ 1171  sudo apt install slurm-client
+ 1172  sbatch UDP1.slurm 
+ 1173  ls -ltre
+ 1174  ls -ltr
+ 1175  chmod 777 UDP1.slurm 
+ 1176  ls -ltr
+ 1177  sbatch UDP1.slurm 
+ 1178  cd ~/cloud/cs553-pa1/disk/
+ 1179  ls
+ 1180  chmod -R 777 ~/cloud/
+ 1181  ls
+ 1182  gcc -pthread -o MyDiskBench MyDiskBench.c
+ 1183  ./MyDiskBench disk-WR-1-32thread.dat
+ 1184  gcc -pthread -o MyDiskBench MyDiskBench.c
+ 1185  ./MyDiskBench disk-WR-1-32thread.dat
+ 1186  gcc -pthread -o MyDiskBench MyDiskBench.c
+ 1187  ./MyDiskBench disk-WR-1-32thread.dat
+ 1188  cd ..
+ 1189  cd network/
+ 1190  ls -l
+ 1191  ./sh_UPD1.sh 
+ 1192  ps
+ 1193  ./sh_UPD1.sh 
+ 1194  ps
+ 1195  ./run_net.sh 
+ 1196  cd ~/cloud/cs553-pa1/memory/
+ 1197  ls
+ 1198  ./run_mem.sh 
+ 1199  ./run_net.sh 
+ 1200  ./cloud/cs553-pa1/network/run_net.sh
+ 1201  cd ~/cloud/cs553-pa1/net
+ 1202  cd ~/cloud/cs553-pa1/network/
+ 1203  ./run_net.sh 
+ 1204  /MyNETBench-UDP network-UDP-1000-1thread.dat & ./MyNETBench-UDP network-UDP-1000-1thread.dat 1 >> /home/chetan/cloud/cs553-pa1/network/output.txt
+ 1205  ./MyNETBench-UDP network-UDP-1000-1thread.dat & ./MyNETBench-UDP network-UDP-1000-1thread.dat 1 >> /home/chetan/cloud/cs553-pa1/network/output.txt
+ 1206  /MyNETBench-UDP network-UDP-1000-1thread.dat 0 & ./MyNETBench-UDP network-UDP-1000-1thread.dat 1 >> /home/chetan/cloud/cs553-pa1/network/output.txt
+ 1207  ./MyNETBench-UDP network-UDP-1000-1thread.dat 0 & ./MyNETBench-UDP network-UDP-1000-1thread.dat 1 >> /home/chetan/cloud/cs553-pa1/network/output.txt
+ 1208  git clone ssh://
+ 1209  <user
+ 1210  id
+ 1211  >@129.114.33.105/exports/git/public/cs553
+ 1212  -
+ 1213  git clone ssh://
+ 1214  <user
+ 1215  id
+ 1216  >@129.114.33.105/exports/git/public/cs553
+ 1217  -
+ 1218  git clone ssh://cgupta5@129.114.33.105/exports/git/public/cs553-pa1.git
+ 1219  cd ..
+ 1220  git clone ssh://cgupta5@129.114.33.105/exports/git/public/cs553-pa1.git
+ 1221  cd ..
+ 1222  mkdir PA1
+ 1223  cd PA1
+ 1224  git clone ssh://cgupta5@129.114.33.105/exports/git/public/cs553-pa1.git
+ 1225  sudo apt git
+ 1226  sude apt update git
+ 1227  sudo apt update git
+ 1228  git add .
+ 1229  git clone ssh://cgupta5@129.114.33.105/exports/git/public/cs553-pa1.git
+ 1230  git add .
+ 1231  history
+ 1232  cd cloud/
+ 1233  cd cs553-pa1/
+ 1234  cd network/
+ 1235  ls
+ 1236  pwd
+ 1237  gcc -pthread -o MyNETBench-TCP MyNETBench-TCP.c
+ 1238  gcc -pthread -o MyNETBench-UDP MyNETBench-UDP.c
+ 1239  ./run_net.sh 
+ 1240  ./run_net.sh MyNETBench-TCP
+ 1241  netstat -np| MyNETBench-TCP
+ 1242  netstat -np| 8877
+ 1243  netstat -np| grep 8877
+ 1244  netstat -np| grep MyNETBench-TCP
+ 1245  netstat -np| grep 8877
+ 1246  ./run_net.sh 
+ 1247  ssh cgupta5@129.114.33.105
+ 1248  cd ..
+ 1249  cd Sub1
+ 1250  ls
+ 1251  cd ..
+ 1252  cd Sub1/
+ 1253  cd cs553-pa1/
+ 1254  git add -all
+ 1255  git add --all
+ 1256  git commit -m "Chetan Gupta A20378854"
+ 1257  git configgit config --global cgupta5.cgupta5@hawk.iit.edu
+ 1258  git configgit config --global cgupta5@hawk.iit.edu
+ 1259  git config --global cgupta5.cgupta5@hawk.iit.edu
+ 1260  git push
+ 1261  git logs
+ 1262  git log
+ 1263  git status
+ 1264  git push
+ 1265  git log
+ 1266  git push
+ 1267  cd mkdir
+ 1268  mkdir Ram
+ 1269  cd Ram
+ 1270  history
+ 1271  git clone ssh://cgupta5@129.114.33.105/exports/git/public/cs553-pa1.git
+ 1272  cd cs553-pa1/
+ 1273  git add -all
+ 1274  git add --all
+ 1275  git commit -m "Chetan Gupta A20378854"
+ 1276  git config --global chaets.Chetan Gupta
+ 1277  git push
+ 1278  git log
+ 1279  cd ~/cloud/Final/
+ 1280  git clone ssh://cgupta5@129.114.33.105/exports/git/cgupta5/cs553-pa1.git
+ 1281  cd cs553-pa1/
+ 1282  git add --all
+ 1283  git commit -m "Chetan Gupta A20378854"
+ 1284  git config --global chetan.cgupta5@hawk.iit.edu
+ 1285  git commit -m "Chetan Gupta A20378854"
+ 1286  git config --global chetan.cgupta5@hawk.iit.edu
+ 1287  git push
+ 1288  git log
+ 1289  git status
+ 1290  exit
+ 1291  cd ..
+ 1292  cd memory/
+ 1293  ls -a |sort
+ 1294  more /proc/cpuinfo
+ 1295  cd ..
+ 1296  cd network/
+ 1297  gcc -pthread -o MyNETBench-UDP MyNETBench-UDP.c 
+ 1298  history
+ 1299  ./MyNETBench-UDP network-UDP-32000-4thread.dat 0 & ./MyNETBench-UDP network-UDP-32000-4thread.dat 1
+ 1300  gcc -pthread -o MyNETBench-UDP MyNETBench-UDP.c 
+ 1301  ./MyNETBench-UDP network-UDP-32000-4thread.dat 0 & ./MyNETBench-UDP network-UDP-32000-4thread.dat 1
+ 1302  cd \
+ 1303  cd P
+ 1304  cd PA1/
+ 1305  git clone ssh://cgupta5@129.114.33.105/exports/git/public/cs553-pa1.git
+ 1306  cd ..
+ 1307  cd cloud/
+ 1308  cd Sub1/
+ 1309  git clone ssh://cgupta5@129.114.33.105/exports/git/public/cs553-pa1.git
+ 1310  git add .
+ 1311  git add 
+ 1312  git add .
+ 1313  gitadd .
+ 1314  git add .
+ 1315  git status
+ 1316  cd ..
+ 1317  git status
+ 1318  cd ..
+ 1319  cd cloud/
+ 1320  cd S
+ 1321  ls
+ 1322  cd S
+ 1323  chmod 77 Sub1
+ 1324  chmod 777 Sub1
+ 1325  cd Sub1
+ 1326  chmod -R 777 ~/cloud/Sub1
+ 1327  git add .
+ 1328  exit
+ 1329  cd cloud/
+ 1330  ls
+ 1331  mkdir pa2afinal
+ 1332  ls pa2afinal/
+ 1333  git clone ssh://cgupta5@216.47.142.38/exports/git/cgupta5/cs553-pa2a.git
+ 1334  cd cs553-pa2a/
+ 1335  ls
+ 1336  sudo su
+ 1337  tar -xzvf /home/chetan/Downloads/eclipse-inst-linux64.tar.gz
+ 1338  ~/eclipse/eclipse
+ 1339  apt-get remove eclipse eclipse-platform
+ 1340  ls
+ 1341  cd D
+ 1342  cd Downloads/
+ 1343  ls
+ 1344  tar -xzvf eclipse-java-photon-M6-linux-gtk-x86_64.tar.gz
+ 1345  ~/eclipse/eclipse
+ 1346  cd ..
+ 1347  ll
+ 1348  cd eclipse-installer/
+ 1349  ls
+ 1350  llll
+ 1351  ll
+ 1352  cat readme
+ 1353  cd readme/
+ 1354  ls
+ 1355  cat readme_eclipse.html 
+ 1356  cd eclipse-installer/
+ 1357  cd /
+ 1358  ll
+ 1359  ~/eclipse/eclipse
+ 1360  useradd hadoop
+ 1361  su
+ 1362  exit
+ 1363  history
+ 1364  ~/eclipse/eclipse
+ 1365  uninstall eclipse
+ 1366  remove eclipse
+ 1367  sudo add-apt-repository ppa:webupd8team/java
+ 1368  sudo apt-get update
+ 1369  sudo apt-get install oracle-java8-installer
+ 1370  sudo apt-get install oracle-java8-set-default
+ 1371  java --versionnn
+ 1372  java --version
+ 1373  java -version
+ 1374  history
+ 1375  ssh://cgupta5@216.47.142.38
+ 1376  ssh cgupta5@216.47.142.38
+ 1377  ssh cgupta5@216.47.142.37
+ 1378  exit
+ 1379  su
+ 1380  sudo -i
+ 1381  ssh-keygen -t rsa
+ 1382  cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+ 1383  chmod 0600 ~/.ssh/authorized_keys
+ 1384  java -version
+ 1385  su
+ 1386  sudo -i
+ 1387  export HADOOP_HOME=/usr/local/hadoop
+ 1388  hadoop version
+ 1389  ls
+ 1390  cd /usr
+ 1391  ls
+ 1392  cd local
+ 1393  ks
+ 1394  ls
+ 1395  cd hadoop/
+ 1396  ls
+ 1397  hadoop version
+ 1398  ~/.bashrc
+ 1399  cd /
+ 1400  ls
+ 1401  ll
+ 1402  export HADOOP_HOME=/usr/local/hadoop
+ 1403  ls
+ 1404  cd..
+ 1405  cd ..
+ 1406  hadoop version
+ 1407  cd /usr/local/hadoop
+ 1408  ls
+ 1409  cd ..
+ 1410  ls
+ 1411  sudo -i
+ 1412  export HADOOP_HOME=/usr/local/hadoop 
+ 1413  hadoop version
+ 1414  ll hadoop
+ 1415  cat ~/.bashrc
+ 1416  hadoop version
+ 1417  cat ~/.bashrc 
+ 1418  hadoop version
+ 1419  cd
+ 1420  env
+ 1421  source .bashrc 
+ 1422  ls -l /usr/local
+ 1423  chown -R chetan:chetan /usr/local/hadoop
+ 1424  sudo chown -R chetan:chetan /usr/local/hadoop
+ 1425  ls -l /usr/local/hadoop
+ 1426  ls -l /usr/local/
+ 1427  source .bashrc 
+ 1428  env
+ 1429  env | grep HADOOP
+ 1430  vi ~/.bashrc 
+ 1431  source .bashrc 
+ 1432  pwd
+ 1433  env
+ 1434  env | grep HADOOP
+ 1435  cd $HADOOP_HOME
+ 1436  cd -
+ 1437  ls
+ 1438  hadoop version
+ 1439  ls -l /usr/local/
+ 1440  where java
+ 1441  pwd java
+ 1442  java version
+ 1443  java -version
+ 1444  whereis java
+ 1445  cd dow
+ 1446  ls
+ 1447  cd Downloads/
+ 1448  ls
+ 1449  ll
+ 1450  cd //
+ 1451  cd..
+ 1452  cd/
+ 1453  cd /
+ 1454  cd ~
+ 1455  ls 
+ 1456  ;;
+ 1457  ll
+ 1458  whereis java
+ 1459  cd export HADOOP_HOME=/usr/local/hadoop 
+ 1460  export HADOOP_MAPRED_HOME=$HADOOP_HOME 
+ 1461  export HADOOP_COMMON_HOME=$HADOOP_HOME 
+ 1462  export HADOOP_HDFS_HOME=$HADOOP_HOME 
+ 1463  export YARN_HOME=$HADOOP_HOME 
+ 1464  export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native 
+ 1465  export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin 
+ 1466  cd /usr/bin/java
+ 1467  cd /usr/bin/
+ 1468  ll
+ 1469  ls
+ 1470  cd ..
+ 1471  cd~
+ 1472  cd ~
+ 1473  whereis jdk1.*
+ 1474  java version
+ 1475  java -version
+ 1476  whereis jdk1.8.0_171
+ 1477  sudo -i
+ 1478  cd D
+ 1479  cd Downloads/
+ 1480  ls
+ 1481  ll
+ 1482  tar zxf jdk-10.0.1_linux-x64_bin.tar.gz
+ 1483  ll
+ 1484  cd ..
+ 1485  sudo -i
+ 1486  cd Downloads/
+ 1487  sudo -i
+ 1488  hadoop version
+ 1489  echo $JAVA_HOME
+ 1490  ls -l /usr/local/
+ 1491  vi .bashrc
+ 1492  vi ~/.bashrc
+ 1493  source .bashrc 
+ 1494  source ~/.bashrc 
+ 1495  echo $JAVA_HOME 
+ 1496  hadoop version
+ 1497  cd /usr/local/hadoop/etc/
+ 1498  ls
+ 1499  cd hadoop/
+ 1500  ls
+ 1501  ls -lrt
+ 1502  export JAVA_HOME=/usr/local/jdk-10.0.1/
+ 1503  vim core-site.xml 
+ 1504  sudo apt install vim
+ 1505  vim core-site.xml 
+ 1506  vim hdfs-site.xml
+ 1507  vim yarn-site.xml
+ 1508  vim mapred-site.xml
+ 1509  ll
+ 1510  cp mapred-site.xml.template mapred-site.xml
+ 1511  ls mapred-site.xml
+ 1512  vim mapred-site.xml
+ 1513  cd ~ 
+ 1514  hdfs namenode -format
+ 1515  hadoop fs -mkdir /home/chetan/hadoopinfra
+ 1516  start-all.sh 
+ 1517  export HADOOP_SSH_OPTS="-p 2020
+ 1518  export HADOOP_SSH_OPTS="-p 2020"
+ 1519  star
